@@ -34,6 +34,12 @@ public class Calculator extends JFrame {
         });
         panel.add(button);
         button = new JButton("CE");
+        button.addActionListener(e -> {
+        display.setText("0");
+        operand1 = 0;
+        operand2 = 0;
+        operator = null;
+        });
         panel.add(button);
         button = new JButton("C");
         button.addActionListener(e -> {
